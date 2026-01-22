@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplecalwithwole</title>
+    <link rel="shortcut icon" href="image/cal.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- In this Simple basic calculator project, i used 3 code languages which are html, & css Js  -->
+    
+
+
+    <div id="wrapper">
+        <h2 class="fro">Olawole Samuel Abulatan</h2>
+        <h3 class="fro">Lead developer Codelife</h3>
+        <h4 class="fro">Simple Basic Calculator</h4>
+        <!-- I disabled the text feature because i want it to display & process input to output . -->
+        <input type="text" id="showme" disabled>
+        <div class="cal">
+         
+            <!-- This cleardisplay() is to clear input at once when it is of no use  -->
+       <button type="button " class="clear" onclick="cleardisplay('')">C</button>
+
+       <!-- This deletedisplay() reduce & delete the numbers/operators input using the slice(). -->
+     <button type="button" onclick="deletedisplay()">⌫</button>
+
+     <!-- The purpose of using this append() is to add to existing input,like the numbers & operators -->
+          <button type="button" class="operator" onclick="append('%')">%</button>
+                <button type="button" class="operator" onclick="append('/')">/</button>
+
+            <button type="button"  onclick="append('7')">7</button>
+            <button type="button" onclick="append('8')">8</button>
+            <button type="button" onclick="append('9')">9</button>
+            <button type="button" class="operator" onclick="append('*')">*</button>
+
+             <button type="button"  onclick="append('4')">4</button>
+            <button type="button" onclick="append('5')">5</button>
+            <button type="button" onclick="append('6')">6</button>
+            <button type="button" class="operator" onclick="append('-')">-</button>
+
+              <button type="button"  onclick="append('1')">1</button>
+            <button type="button" onclick="append('2')">2</button>
+            <button type="button" onclick="append('3')">3</button>
+            <button type="button" class="operator" onclick="append('+')">+</button>
+
+             <button type="button"  onclick="append('0')">0</button>
+            <button type="button" onclick="append('.')">.</button>
+
+            <!-- This function here will  compute the input values and process it adequately  -->
+            
+            <button type="button" class="equal" onclick="calculate('=')">=</button>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

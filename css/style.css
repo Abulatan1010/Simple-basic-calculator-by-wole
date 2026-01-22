@@ -1,0 +1,73 @@
+
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 2% 15%;
+    font-size: 16px;
+    height: 100vh;
+}
+
+#wrapper{
+    padding: 20px;
+    background: gray;
+    border-radius: 20px;
+    width: 400px;
+    /* height: 130px; */
+}
+ 
+#showme{
+    background: black;
+    color: white;
+    text-align: right;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.fro{
+    text-align: center;
+    color: yellow;
+}
+.cal{
+    background: gray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 400px;
+    gap: 10px;
+
+
+    
+}
+
+button{
+    border-radius: 20px;
+    background: black;
+    color: white;
+    /* width: 10px; */
+    padding: 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.equal{
+    grid-column:span 2;
+}
+.operator{
+    background: yellow;
+
+}
+
+@media (max-width: 600px ){
+    button{
+        padding: 10px;
+       font-size: 12px;
+    }
+    #showme{
+        font-size: 16px;
+    }
+}
