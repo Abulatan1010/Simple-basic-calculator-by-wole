@@ -1,6 +1,9 @@
 
 body{
-    background: black;
+     background:linear-gradient(135deg, #667eea, #764ba2 , #6dd5ed ); 
+      background-size: 700% 700%;
+     animation: gradientMove 10s ease infinite;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,30 +13,49 @@ body{
     height: 100vh;
 }
 
+body{
+ background-size: 800% 800%;
+     animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100%  {background-position: 0% 50%;}
+}
+
+
+
 #wrapper{
     padding: 20px;
-    background: gray;
+background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+  
     border-radius: 20px;
     width: 400px;
     /* height: 130px; */
 }
  
 #showme{
+
     background: black;
     color: white;
     text-align: right;
     margin-bottom: 15px;
-    width: 100%;
+    width: 95%;
     height: 60px;
-    border-radius: 20px;
+    font-size: 22px;
+    border-radius: 35px;
     padding: 10px;
 }
 .fro{
     text-align: center;
-    color: yellow;
+    color: white;
 }
 .cal{
-    background: gray;
+       
+   background:rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(10px); */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 400px;
@@ -44,31 +66,34 @@ body{
 }
 
 button{
-    border-radius: 20px;
-    background: black;
+    border-radius: 60px;
+  background:rgba(255, 255, 255, 0.2);
     color: white;
     /* width: 10px; */
     padding: 18px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
+}
+button:hover{
+  background:rgba(255, 255, 255, 0.4);  
 }
 
 button.equal{
     grid-column:span 2;
 }
 .operator{
-    background: yellow;
-    color: black;
+    background:black;
+    color: white;
 
 }
 
 @media (max-width: 600px ){
     button{
         padding: 10px;
-       font-size: 12px;
+       font-size: 20px;
     }
     #showme{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
